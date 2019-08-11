@@ -23,7 +23,7 @@ pod 'ProgressStepView', '~> 1.0.0'
 
 ## Requirements
 
-- iOS 8.0 or later
+- iOS 10.0 or later
 - Xcode 10.0 or later
 
 
