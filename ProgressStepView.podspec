@@ -8,6 +8,9 @@ Pod::Spec.new do |spec|
   spec.author        = { "Gustavo Storck" => "gustavo.storck1@gmail.com" }
   spec.platform      = :ios, "10.0"
   spec.source        = { :git => "https://github.com/gustavoSAS/ProgressStepView.git", :tag => "#{spec.version}" }
-  spec.source_files  = "ProgressStepView"
+  spec.source_files  = "ProgressStepView", "ProgressStepView/**/*.swift"
+  spec.resource_bundles = {
+    'StepIndicator' => ['ProgressStepView/**/*.xcassets']
+  }
   spec.swift_versions = ["4.2","5"]
 end
