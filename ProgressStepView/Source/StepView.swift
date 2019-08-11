@@ -11,7 +11,10 @@ import UIKit
 class StepView: UIView {
     // MARK: Private attributes
     private lazy var checkImage: UIImageView = {
-        let image = UIImage(named: "ic_check", in: Bundle(for: StepView.self), compatibleWith: nil)
+        let bundle = Bundle(for: StepView.self)
+        guard let url = bundle.url(forResource: "ProgressStepView", withExtension: "bundle") else { return UIImageView() }
+        
+        let image = UIImage(named: "ic_check", in: Bundle(url: url), compatibleWith: nil)
         let imageView = UIImageView(image: image)
         imageView.alpha = 0.0
         imageView.tintColor = .white
