@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.source        = { :git => "https://github.com/gustavoSAS/ProgressStepView.git", :tag => "#{spec.version}" }
   spec.source_files  = "ProgressStepView", "ProgressStepView/**/*.swift"
   spec.resource_bundles = {
-    'StepIndicator' => ['ProgressStepView/**/*.xcassets']
+    'ProgressStepView' => ['ProgressStepView/**/*.xcassets']
   }
   spec.swift_versions = ["4.2","5"]
 end
