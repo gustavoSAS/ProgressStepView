@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.license       = "MIT"
   spec.author        = { "Gustavo Storck" => "gustavo.storck1@gmail.com" }
   spec.platform      = :ios, "10.0"
-  spec.source        = { :git => "https://github.com/gustavoSAS/ProgressStepView", :tag => "#{spec.version}" }
+  spec.source        = { :git => "https://github.com/gustavoSAS/ProgressStepView.git", :tag => "#{spec.version}" }
   spec.source_files  = "ProgressStepView"
-  spec.swift_version = "5.0"
+  spec.swift_versions = ["4.2","5"]
 end
